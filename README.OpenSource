@@ -1,0 +1,11 @@
+[
+    {
+        "Name": "minimp4",
+        "License": "Creative Commons Zero v1.0 Universal",
+        "License File": "LICENSE",
+        "Version Number": "1.0.0",
+        "Owner": "lijianpeng7@huawei.com",
+        "Upstream URL": "https://github.com/JianpengLi1993/minimp4/releases/tag/v1.0.0",
+        "Description": "Minimalistic MP4 mux/demux single header library."
+    }
+]
