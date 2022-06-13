@@ -13,9 +13,7 @@
 # limitations under the License.
 #
 
-minimp4_sources = [
-    "minimp4.c",
-]
+minimp4_sources = [ "minimp4.c" ]
 
 if (defined(ohos_lite)) {
   import("//build/lite/config/component/lite_component.gni")
@@ -23,9 +21,7 @@ if (defined(ohos_lite)) {
   defines = []
 
   config("minimp4_config") {
-    include_dirs = [
-      "minimp4",
-    ]
+    include_dirs = [ "minimp4" ]
   }
 
   lite_library("minimp4_shared") {
@@ -70,16 +66,14 @@ if (defined(ohos_lite)) {
 } else {
   import("//build/ohos.gni")
   config("minimp4_config") {
-    include_dirs = [
-      "minimp4",
-    ]
+    include_dirs = [ "minimp4" ]
   }
 
   ohos_shared_library("minimp4_shared") {
     public_configs = [ ":minimp4_config" ]
     output_name = "minimp4"
     subsystem_name = "common"
-    part_name = "dsoftbus_standard"
+    part_name = "dsoftbus"
     sources = minimp4_sources
   }
 
